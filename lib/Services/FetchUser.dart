@@ -47,7 +47,7 @@ class FetchUser with ChangeNotifier {
       if (statusCode == 200 || statusCode == 201) {
         print('sucees');
         print(response.body);
-        final jsonResponse = json.decode(response.body);
+        // final jsonResponse = json.decode(response.body);
 
         return true;
       } else {

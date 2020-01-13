@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:insure_app/views/CreateReport.dart';
+import 'package:insure_app/views/DashMain.dart';
+
 import 'package:insure_app/views/Dashboard.dart';
 import 'package:insure_app/views/Home.dart';
 import 'package:insure_app/views/Login.dart';
@@ -28,6 +31,9 @@ class MyApp extends StatelessWidget {
             '/Home': (BuildContext context) => new MyHomePage(),
             '/login': (BuildContext context) => new Login(),
             '/dashboad': (BuildContext context) => new Dashboard(),
+            
+            '/dashmain': (BuildContext context) => new DashMain(),
+            '/creatReport': (BuildContext context) => new CreateReport(),
           },
           debugShowCheckedModeBanner: false,
           home: MyHomePage(),

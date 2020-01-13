@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+// import 'package:flutter/services.dart';
 import 'dart:async';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:insure_app/Services/FetchUser.dart';
@@ -157,7 +157,7 @@ class _LoginPageState extends State<Login> {
             child: setUpButtonChild(),
             onPressed: () {
               //SystemChannels.textInput.invokeMethod('TextInput.hide');
-              Navigator.of(context).pushNamed('/dashboad');
+              Navigator.of(context).pushNamed('/dashmain');
               // 
             }, 
             minWidth: double.infinity,
@@ -206,21 +206,21 @@ class _LoginPageState extends State<Login> {
     );
   }
 
-  _showSnackBar() {
-    print("Show Snackbar here !");
-    final snackBar = new SnackBar(
-      content: new Text("Login Failed...!!!"),
-      duration: new Duration(seconds: 3),
-      backgroundColor: Colors.red,
-      action: new SnackBarAction(
-          label: 'Try Again',
-          onPressed: () {
-            print('press Ok on SnackBar');
-          }),
-    );
+  // _showSnackBar() {
+  //   print("Show Snackbar here !");
+  //   final snackBar = new SnackBar(
+  //     content: new Text("Login Failed...!!!"),
+  //     duration: new Duration(seconds: 3),
+  //     backgroundColor: Colors.red,
+  //     action: new SnackBarAction(
+  //         label: 'Try Again',
+  //         onPressed: () {
+  //           print('press Ok on SnackBar');
+  //         }),
+  //   );
 
-    _scaffoldKey.currentState.showSnackBar(snackBar);
-  }
+  //   _scaffoldKey.currentState.showSnackBar(snackBar);
+  // }
 
   @override
   Widget build(BuildContext context) {
